@@ -1018,3 +1018,25 @@ button {
     padding: var(--space-8) var(--space-6);
   }
 }
+
+/* ── Essay (flyto-essay) ── */
+.essay { padding: var(--space-12) var(--space-6) var(--space-24); }
+.essay__inner { max-width: 680px; margin: 0 auto; }
+.essay__date { font-size: var(--text-sm); color: var(--color-text-light); letter-spacing: var(--tracking-wide); }
+.essay__title { font-family: 'Noto Serif JP', serif; font-size: var(--text-3xl); font-weight: 600; line-height: 1.5; margin: var(--space-3) 0 var(--space-2); color: var(--color-text); }
+.essay__byline { font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-12); }
+.essay__body p { font-family: 'Noto Serif JP', serif; font-size: 1.0625rem; line-height: 2.1; color: var(--color-gray-800); margin-bottom: 1.6em; text-align: justify; }
+.essay__note { margin-top: var(--space-16); padding-top: var(--space-6); border-top: 1px solid var(--color-border); font-size: var(--text-sm); color: var(--color-text-secondary); line-height: var(--leading-relaxed); }
+.essay__note a { color: var(--color-accent); }
+.essay__pager { display: flex; justify-content: space-between; gap: var(--space-4); margin-top: var(--space-10); font-size: var(--text-sm); }
+.essay__pager-link { color: var(--color-text-secondary); }
+.essay__pager-link:hover { color: var(--color-accent); }
+.essay-list { max-width: 720px; margin: 0 auto; padding: 0 var(--space-6); }
+.essay-list__lead { color: var(--color-text-secondary); line-height: var(--leading-relaxed); margin-bottom: var(--space-10); }
+.essay-list__item { display: block; padding: var(--space-8) 0; border-top: 1px solid var(--color-border); color: inherit; }
+.essay-list__item:last-child { border-bottom: 1px solid var(--color-border); }
+.essay-list__date { font-size: var(--text-sm); color: var(--color-text-light); }
+.essay-list__title { font-family: 'Noto Serif JP', serif; font-size: var(--text-2xl); font-weight: 600; margin: var(--space-2) 0; transition: color .2s; }
+.essay-list__item:hover .essay-list__title { color: var(--color-accent); }
+.essay-list__excerpt { color: var(--color-text-secondary); line-height: var(--leading-relaxed); }
+@media (max-width: 768px) { .essay__title { font-size: var(--text-2xl); } .essay__body p { font-size: 1rem; line-height: 2; } }
